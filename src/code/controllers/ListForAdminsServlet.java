@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-/**
+/** ololo
  * Created by admin on 22.04.2017.
  */
 public class ListForAdminsServlet  extends HttpServlet {
