@@ -26,6 +26,10 @@
             <td><c:out value="${book.city}"></c:out></td>
             <td><c:out value="${book.year}"></c:out></td>
             <td><c:out value="${book.pagesCount}"></c:out></td>
+            <td><form method="post">
+                <input type="submit" value="read"/>
+                <input type="hidden" name="isn" value="${book.isn}"/>
+            </form></td>
         </tr>
     </c:forEach>
 </table>

@@ -19,4 +19,15 @@ public class StorageUnitServiceImpl implements StorageUnitService {
         HashSet<StorageUnit> storageUnits = storageUnitDAO.getAllStorageUnits();
         return storageUnits;
     }
+
+    @Override
+    public StorageUnit getStorageUnitByISN(String isn){
+        StorageUnit storageUnit = storageUnitDAO.getStorageUnitByISN(isn);
+        return storageUnit;
+    }
+
+    @Override
+    public void delStorageUnitByISN(String isn){
+        storageUnitDAO.delStorageUnitByISN(isn);
+    }
 }

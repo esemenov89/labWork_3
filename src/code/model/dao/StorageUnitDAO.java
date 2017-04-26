@@ -9,4 +9,6 @@ import java.util.HashSet;
  */
 public interface StorageUnitDAO {
     HashSet<StorageUnit> getAllStorageUnits();
+    StorageUnit getStorageUnitByISN(String isn);
+    void delStorageUnitByISN(String isn);
 }
